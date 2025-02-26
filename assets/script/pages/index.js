@@ -9,7 +9,7 @@ MainLayout(
     const renderHero = Hero({
       title: dataHeaderBanner.title,
       desc: dataHeaderBanner.desc,
-      bgImg: banner,
+      bgImg: dataHeaderBanner.bgImg,
       headerNavigationId: Navbar(dataHeaderNavigation.links, dataHeaderNavigation.logo, dataHeaderNavigation.name).element.id,
     });
     appendElement("header", renderHero.element, renderHero.ui);
